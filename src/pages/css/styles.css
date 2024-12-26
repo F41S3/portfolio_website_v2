@@ -1,0 +1,34 @@
+.register {
+    width: 400px; /* set the width of the form */
+    background-color: lightgray; /* light gray color for the form background */
+    padding: 16px; /* add some space around the inputs and buttons */
+    text-align: center; /* centers all elements within the container */
+    display: flex; /* displays the form as a flexible box */
+    align-items: center; /* vertically aligns all elements in the middle of their containers */
+    margin-left: auto; /* adds space to the left side of the form, using automatic margins */
+    margin-right: auto; /* adds space to the right side of the form, using automatic margins */
+    flex-direction: column; /* stacks all elements vertically within the container */
+    margin-top:100px;
+
+}
+.register h2 {
+    text-align: center; /* aligns the heading to the center of the form */
+    margin-top: 0; /* removes any top margin from the heading so that it is flush with the top of the form */
+}
+
+.register input[type="text"], .register input[type="email"] {
+    width: 100%; /* makes all text inputs and email inputs as wide as possible within their containers */
+    padding: 8px; /* adds some space around the input values for better usability */
+}
+
+.register select {
+    display: block; /* makes the select element take up the full width of its container */
+    padding-bottom: 16px; /* add some extra space between this and any following inputs */
+}
+
+.register button[type="submit"] {
+    background-color: green; /* green color for the submit button */
+    color: white; /* text color of the button */
+    padding: 12px; /* give some space around the text in the button */
+    font-size: 16px; /* make it a bit larger than the default size */
+}

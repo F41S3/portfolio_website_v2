@@ -6,7 +6,7 @@ export default function Footer() {
         <footer id="footer" className="footer">
             <div className="container">
                 <div className="footer-legal">
-                    <p>&copy; Copyright Dalhousie University | Authored by Alex Pettipas | 2024</p>
+                    <p> Page Authored by Alex Pettipas | Hosted by Netlify | 2024</p>
                 </div>
             </div>
         </footer>

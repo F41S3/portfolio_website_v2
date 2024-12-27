@@ -6,12 +6,13 @@ import './css/styles.css'
 export default function Header() {
     return (
         <header>
-            <h1 className="pageTitle">Fun Website</h1>
+            <h1 className="pageTitle">Portfolio</h1>
             <div className="dropdown">
                 <button className="dropbtn" >Menu</button>
                 <div className="dropdown-content">
-                    <Link to="/Profile">Go to Profile</Link>
-                    <Link to="/Dashboard">Go to Dashboard</Link>
+                    <Link to="/Homepage">Homepage</Link>
+                    <Link to="/Contact">Contact</Link>
+                    <Link to="/WorkHistory">See Work History</Link>
                 </div>
             </div>
         </header>

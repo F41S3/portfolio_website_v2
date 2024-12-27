@@ -10,7 +10,7 @@ export default function Header() {
             <div className="dropdown">
                 <button className="dropbtn" >Menu</button>
                 <div className="dropdown-content">
-                    <Link to="/Homepage">Homepage</Link>
+                    <Link to="/">Homepage</Link>
                     <Link to="/Contact">Contact</Link>
                     <Link to="/WorkHistory">See Work History</Link>
                 </div>

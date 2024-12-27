@@ -15,9 +15,9 @@ function App() {
         <BrowserRouter>
           <Routes>
             <Route index element={<HomePage/>}/>
-            <Route path="/Register" element={<Contact/>}/>
-            <Route path="/Profile" element={<AboutMe/>}/>
-            <Route path="/Dashboard" element={<WorkHistory/>}/>
+            <Route path="/Contact" element={<Contact/>}/>
+            <Route path="/AboutMe" element={<AboutMe/>}/>
+            <Route path="/WorkHistory" element={<WorkHistory/>}/>
           </Routes>
         </BrowserRouter>
       </div>

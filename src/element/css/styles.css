@@ -1,13 +1,11 @@
 header {
-    background-color: #203b51;
-    padding: 2% 1% 2% 1%;
-    text-align: center;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    margin-left: auto;
-    margin-right: auto;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
 }
-
 .pageTitle {
     color: white;
     margin: 0;
@@ -69,23 +67,24 @@ body {
     color: black;
 }
 
+/* Footer Styles */
+
 .footer {
-    display: flex;
-    padding: 1% 1%;
-    margin: 1% 1%;
-    background-color: #203b51;
-    max-width: 99%;
-    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
 }
 
+.container {
+    max-width: 800px;
+    margin: auto;
+}
 
 .footer-legal {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    background-color: black;
-    padding: 1% 1%;
-    margin: 1% 1%;
+    text-align: center;
 }
 
 .showcase-container {
@@ -125,5 +124,22 @@ body {
     .project-entry {
         width: 90%;
     }
+    .pageTitle {
+        text-align: center;
+        margin-right: 0;
+    }
 }
 
+/* Name Title Styles */
+
+.nameTitle {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.selfie {
+    width: 100px;
+    height: auto;
+    border-radius: 50%;
+    margin-top: 20px;
+}

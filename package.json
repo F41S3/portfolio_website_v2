@@ -34,6 +34,10 @@
     ]
   },
   "devDependencies": {
-    "web-vitals": "^4.2.4"
+    "web-vitals": "^4.2.4",
+    "@babel/core": "7.26.0",
+    "@babel/eslint-parser": "7.25.9",
+    "@babel/plugin-proposal-private-property-in-object": "7.21.0",
+    "@babel/preset-env": "7.26.0"
   }
 }

@@ -42,7 +42,7 @@ export default function Showcase() {
                     {(project.img.length > 0 || project.vid.length > 0) && (
                         <div className="media-container">
                             {project.img.map((img, imgIndex) => (
-                                <img key={index + "-" + imgIndex} src={project.img} alt={`Image for ${project.title}`} />
+                                <img key={index + "-" + imgIndex} src={project.img} alt={`${project.title}`} />
                             ))}
                             {project.vid.map((vid, vidIndex) => (
                                 <video key={index + "-" + vidIndex} controls>

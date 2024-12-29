@@ -1,6 +1,5 @@
 import React from 'react'
-import VideoPlayer from "./YoutubeEmbed.js"
-import ImageSlider from "./ImageSlider.js"
+import MediaSlider from "./MediaSlider.js"
 
 
 export default function Showcase() {
@@ -12,8 +11,8 @@ export default function Showcase() {
                 "features are the propellers speed up or slow down based on the users speed.\n" +
                 "Additionally, the mountains are procedurally generated using a self-written Perlin\n" +
                 "noise algorithm.",
-            "img": ["/media/plane_im1.png", "/media/plane_im2.png"],
             "vid": "lKt3g4m6IyA",
+            "img": ["/media/plane_im1.png", "/media/plane_im2.png"],
             "tags": ["C", "OpenGL", "GLSL", ""],
             "repositoryURL": "google.com",
         },
@@ -21,16 +20,16 @@ export default function Showcase() {
             "title": "Various Machine Learning Models",
             "desc": "This is a collection of various machine learning algorithms I have implemented\n" +
                 "in python both from scratch and using various libraries and frameworks.",
-            "img": ["../media/logo.svg"],
             "vid": [""],
+            "img": ["../media/logo.svg"],
             "tags": ["Python", "Numpy", "Torch", "Matplotlib", "Google Colab", "Vectorization"],
             "repositoryURL": "https://github.com/F41S3/TBD",
         },
         {
             "title": "My Portfolio",
             "desc": "This is a project I developed using Node.js to showcase my work. \n",
-            "img": ["../media/logo.svg"],
             "vid": [""],
+            "img": ["../media/logo.svg"],
             "tags": ["JavaScript", "Node.js", "React.js", ""],
             "repositoryURL": "https://github.com/F41S3/Flight-Sim",
         }]
@@ -43,13 +42,13 @@ export default function Showcase() {
                 <div key={index} className="project-entry">
                     <h2>{project.title}</h2>
                     <p>{project.desc}</p>
-                    {(project.img.length > 0 || project.vid.length > 0) && (
+                    {(project.img.length > 0 || project.vid !== "") && (
                         <div className="sliderContainer">
-                            <ImageSlider
-                                images={project.img}
-                            />
-                            <VideoPlayer
-                                embedID={project.vid}
+                            <MediaSlider
+                                medias={[
+                                    ...project.img.map((image) => ({type: 'image', src: image})),
+                                    {type: 'video', src: project.vid},
+                                ]}
                             />
                         </div>
                     )}

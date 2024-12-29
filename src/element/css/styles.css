@@ -151,3 +151,24 @@ body {
     height: 100%;
     z-index: -1;
 }
+
+.sliderContainer {
+    background-color: black;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.imageSlider{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    overflow: visible;
+}
+.imageSlider img {
+    max-height :300px ;
+    width : auto ;
+    animation-name: fadeIn;
+    animation-duration:5s;
+}

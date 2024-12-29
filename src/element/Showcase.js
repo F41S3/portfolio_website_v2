@@ -1,3 +1,7 @@
+import React, { Component } from 'react'
+import VideoPlayer from "./VideoPlayer.js"
+import SliderContainer from "./SliderContainer.js"
+
 
 export default function Showcase() {
 
@@ -8,8 +12,8 @@ export default function Showcase() {
                 "features are the propellers speed up or slow down based on the users speed.\n" +
                 "Additionally, the mountains are procedurally generated using a self-written Perlin\n" +
                 "noise algorithm.",
-            "img": ["../media/logo.svg", "../media/selfie.png"],
-            "vid": ["../media/plane_demo.mp4"],
+            "img": ["../media/plane_im1.png", "../media/plane_im2.png"],
+            "vid": ["../media/plane_demo.mp4", "../media/plane_demo.webm"],
             "tags": ["C", "OpenGL", "GLSL", ""],
             "repositoryURL": "google.com",
         },
@@ -40,15 +44,16 @@ export default function Showcase() {
                     <h2>{project.title}</h2>
                     <p>{project.desc}</p>
                     {(project.img.length > 0 || project.vid.length > 0) && (
-                        <div className="media-container">
+                        <div className="sliderContainer">
                             {project.img.map((img, imgIndex) => (
-                                <img key={index + "-" + imgIndex} src={project.img} alt={`${project.title}`} />
+                                <SliderContainer
+                                    image={project.img}
+                                />
                             ))}
                             {project.vid.map((vid, vidIndex) => (
-                                <video key={index + "-" + vidIndex} controls>
-                                    <source src={project.vid} type="video/mp4" />
-                                    Your browser does not support the video tag.
-                                </video>
+                                <VideoPlayer
+                                    video={project.vid}
+                                />
                             ))}
                         </div>
                     )}

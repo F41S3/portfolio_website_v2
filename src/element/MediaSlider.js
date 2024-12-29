@@ -27,8 +27,14 @@ export default function MediaSlider({ medias }) {
                     embedID={medias[currentIndex].src}
                     />
             )}
-            <button onClick={() => handlePrev()}>Previous</button>
-            <button onClick={() => handleNext()}>Next</button>
+            <div className="button-container">
+                <button onClick={() => handlePrev()} className="prev-button">
+                    Previous
+                </button>
+                <button onClick={() => handleNext()} className="next-button">
+                    Next
+                </button>
+            </div>
         </div>
     );
 }

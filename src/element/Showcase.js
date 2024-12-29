@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import VideoPlayer from "./VideoPlayer.js"
-import SliderContainer from "./SliderContainer.js"
+import VideoPlayer from "./YoutubeEmbed.js"
+import ImageSlider from "./ImageSlider.js"
 
 
 export default function Showcase() {
@@ -12,8 +12,8 @@ export default function Showcase() {
                 "features are the propellers speed up or slow down based on the users speed.\n" +
                 "Additionally, the mountains are procedurally generated using a self-written Perlin\n" +
                 "noise algorithm.",
-            "img": ["../media/plane_im1.png", "../media/plane_im2.png"],
-            "vid": ["../media/plane_demo.mp4", "../media/plane_demo.webm"],
+            "img": ["/media/plane_im1.png", "/media/plane_im2.png"],
+            "vid": "lKt3g4m6IyA",
             "tags": ["C", "OpenGL", "GLSL", ""],
             "repositoryURL": "google.com",
         },
@@ -45,16 +45,12 @@ export default function Showcase() {
                     <p>{project.desc}</p>
                     {(project.img.length > 0 || project.vid.length > 0) && (
                         <div className="sliderContainer">
-                            {project.img.map((img, imgIndex) => (
-                                <SliderContainer
-                                    image={project.img}
-                                />
-                            ))}
-                            {project.vid.map((vid, vidIndex) => (
-                                <VideoPlayer
-                                    video={project.vid}
-                                />
-                            ))}
+                            <ImageSlider
+                                images={project.img}
+                            />
+                            <VideoPlayer
+                                embedID={project.vid}
+                            />
                         </div>
                     )}
                     <p>Tags: {project.tags.join(", ")}</p>

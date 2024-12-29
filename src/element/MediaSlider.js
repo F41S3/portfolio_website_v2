@@ -24,8 +24,8 @@ export default function MediaSlider({ medias }) {
                 <img src={process.env.PUBLIC_URL + medias[currentIndex].src} alt="Placeholder" />
             ) : (
                 <YoutubeEmbed
-                    embed={medias[currentIndex].embed}
-                />
+                    embedID={medias[currentIndex].src}
+                    />
             )}
             <button onClick={() => handlePrev()}>Previous</button>
             <button onClick={() => handleNext()}>Next</button>

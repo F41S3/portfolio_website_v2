@@ -1,9 +1,12 @@
 import {Link} from "react-router-dom";
-import React from "react";
+import React, { useEffect} from "react";
 import './css/styles.css'
 
 
 export default function Header() {
+    useEffect(() => {
+        document.title = "Portfolio of Alex Pettipas";
+    }, []);
     return (
         <header>
             <h1 className="pageTitle">Portfolio</h1>

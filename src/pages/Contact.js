@@ -18,6 +18,7 @@ export default function Contact() {
                 <div className="content-container">
                     <h1>Contact Me</h1>
                     <p>Get in touch with me to discuss your projects, ideas, or work opportunities!</p>
+                    <p>I am a recent graduate from Dalhousie University, waiting to receive my Bachelor of Computer Science diploma</p>
                     <p>Email: alexpettipas@gmail.com</p>
                     <p>LinkedIn: Alexander Pettipas</p>
                     <p>Located in Halifax</p>

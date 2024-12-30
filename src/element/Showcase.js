@@ -23,7 +23,7 @@ export default function Showcase() {
             "vid": [""],
             "img": ["../media/logo.svg"],
             "tags": ["Python", "Numpy", "Torch", "Matplotlib", "Google Colab", "Vectorization"],
-            "repositoryURL": "https://github.com/F41S3/TBD",
+            "repositoryURL": "https://github.com/F41S3/ML_Models",
         },
         {
             "title": "My Portfolio",
@@ -31,7 +31,7 @@ export default function Showcase() {
             "vid": [""],
             "img": ["../media/logo.svg"],
             "tags": ["JavaScript", "Node.js", "React.js", ""],
-            "repositoryURL": "https://github.com/F41S3/Flight-Sim",
+            "repositoryURL": "https://github.com/F41S3/portfolio_website_v2",
         }]
 
 

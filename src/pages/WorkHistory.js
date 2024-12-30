@@ -14,6 +14,9 @@ export default function WorkHistory() {
             <ParticleBackground></ParticleBackground>
             <Header></Header>
             <NameTitle></NameTitle>
+            <div className="work-history">
+
+            </div>
             <Footer></Footer>
         </div>
 

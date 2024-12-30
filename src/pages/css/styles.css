@@ -1,34 +1,45 @@
-.register {
-    width: 400px; /* set the width of the form */
-    background-color: lightgray; /* light gray color for the form background */
-    padding: 16px; /* add some space around the inputs and buttons */
-    text-align: center; /* centers all elements within the container */
-    display: flex; /* displays the form as a flexible box */
-    align-items: center; /* vertically aligns all elements in the middle of their containers */
-    margin-left: auto; /* adds space to the left side of the form, using automatic margins */
-    margin-right: auto; /* adds space to the right side of the form, using automatic margins */
-    flex-direction: column; /* stacks all elements vertically within the container */
-    margin-top:100px;
-
-}
-.register h2 {
-    text-align: center; /* aligns the heading to the center of the form */
-    margin-top: 0; /* removes any top margin from the heading so that it is flush with the top of the form */
+.contact-container {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: calc(100vh - 100px);
 }
 
-.register input[type="text"], .register input[type="email"] {
-    width: 100%; /* makes all text inputs and email inputs as wide as possible within their containers */
-    padding: 8px; /* adds some space around the input values for better usability */
+.content-container {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
 }
 
-.register select {
-    display: block; /* makes the select element take up the full width of its container */
-    padding-bottom: 16px; /* add some extra space between this and any following inputs */
+
+.work-history {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+
+    min-height: calc(100vh - 40px);
 }
 
-.register button[type="submit"] {
-    background-color: green; /* green color for the submit button */
-    color: white; /* text color of the button */
-    padding: 12px; /* give some space around the text in the button */
-    font-size: 16px; /* make it a bit larger than the default size */
+.contact-container h1 {
+    font-size: 36px;
+}
+
+.contact-container p {
+    font-size: 18px;
+}
+
+.social-media-links a {
+    margin-right: 20px;
+}
+
+.social-media-links i {
+    font-size: 24px;
+}
+
+.social-media-links img {
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    border-radius: 50%;
 }

@@ -3,7 +3,7 @@ import './css/styles.css'
 
 
 export default function NameTitle() {
-    let selfie = '../media/selfie.png';
+    let selfie = '../media/selfie.jpg';
     let alt_attr = 'sites author'
     return (
         <div>

@@ -2,9 +2,10 @@ import React from "react";
 
 
 export default function Secret() {
+    let im = '../../media/art.png';
     return (
         <div>
-            <img className="selfie" src="../../public/media/art.png" alt="Secret"></img>
+            <img src={im} alt="Secret"></img>
         </div>
 
     );

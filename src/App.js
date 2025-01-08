@@ -6,7 +6,7 @@ import HomePage from './pages/HomePage';
 import Contact from './pages/Contact';
 import AboutMe from './pages/AboutMe';
 import WorkHistory from './pages/WorkHistory';
-
+import Secret from './pages/Secret';
 
 function App() {
   return (
@@ -17,6 +17,7 @@ function App() {
             <Route path="/Contact" element={<Contact/>}/>
             <Route path="/AboutMe" element={<AboutMe/>}/>
             <Route path="/WorkHistory" element={<WorkHistory/>}/>
+            <Route path="/Secret" element={<Secret/>}/>
           </Routes>
         </BrowserRouter>
       </div>

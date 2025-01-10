@@ -15,8 +15,8 @@ export default function JobHistory() {
                 "maintaining the cleanliness of aircraft interiors and exteriors. This role requires a high level of " +
                 "physical fitness and attention to detail to ensure safe and efficient airport operations.",
             "img": "/media/swissport_logo.png",
-            "tags": ["Aviation"],
-            "link": "google.com",
+            "tags": ["Aviation", "Transportation"],
+            "link": "https://www.swissport.com/en/about",
         },
         {
             "title": "Ramp Coordinator",
@@ -27,8 +27,8 @@ export default function JobHistory() {
                 "support to stakeholders. The successful candidate must be adaptable, able to work safely in all " +
                 "conditions, and perform specialized tasks as needed.",
             "img": "/media/executive_aviation_logo.png",
-            "tags": ["Aviation"],
-            "link": "google.com",
+            "tags": ["Aviation", "Transportation"],
+            "link": "https://www.executiveaviation.ca/about/",
         },
         {
             "title": "Charge Hand",
@@ -38,8 +38,8 @@ export default function JobHistory() {
                 "include leading a team of ramp attendants, delegating tasks, maintaining equipment, and troubleshooting " +
                 "issues to ensure safe and timely cargo and baggage handling.",
             "img": "/media/swissport_logo.png",
-            "tags": ["Aviation"],
-            "link": "google.com",
+            "tags": ["Aviation", "Transportation"],
+            "link": "https://www.swissport.com/en/about",
         }]
 
 

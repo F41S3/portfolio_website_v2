@@ -29,7 +29,7 @@ export default function Showcase() {
             "title": "My Portfolio",
             "desc": "This is a project I developed using Node.js to showcase my work. \n",
             "vid": [""],
-            "img": ["../media/logo.svg"],
+            "img": ["../media/website_uml.png", "../media/work_history_uml.png"],
             "tags": ["JavaScript", "Node.js", "React.js", ""],
             "repositoryURL": "https://github.com/F41S3/portfolio_website_v2",
         }]

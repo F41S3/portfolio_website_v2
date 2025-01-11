@@ -13,8 +13,20 @@ export default function Showcase() {
                 "noise algorithm.",
             "vid": "lKt3g4m6IyA",
             "img": ["/media/plane_im1.png", "/media/plane_im2.png"],
-            "tags": ["C", "OpenGL", "GLSL", ""],
+            "tags": ["C", "OpenGL", "GLSL", "gcc"],
             "repositoryURL": "google.com",
+        },
+        {
+            "title": "Expense Management App",
+            "desc": "Developed by a team of 8 dedicated students as part of our Mobile Computing course, Expense Manager" +
+                " is the culmination of our collective efforts to create an intuitive and user-friendly application " +
+                "that meets the evolving needs of modern finance management. Our goal was to design an app that would " +
+                "empower users with comprehensive tools for managing their personal finances, making it easier to make " +
+                "group purchases and equally share collaborative expenses.",
+            "vid": [""],
+            "img": ["../media/expense_manager_1.png", "../media/expense_manager_2.png", "../media/expense_manager_3.png"],
+            "tags": ["Android", "Kotlin", "Firebase", "NoSQL", "AndoridX", "Gradle"],
+            "repositoryURL": "https://github.com/F41S3/ML_Models",
         },
         {
             "title": "Various Machine Learning Models",

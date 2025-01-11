@@ -26,7 +26,7 @@ export default function Showcase() {
             "vid": [""],
             "img": ["../media/expense_manager_1.png", "../media/expense_manager_2.png", "../media/expense_manager_3.png"],
             "tags": ["Android", "Kotlin", "Firebase", "NoSQL", "AndoridX", "Gradle"],
-            "repositoryURL": "https://github.com/F41S3/ML_Models",
+            "repositoryURL": "https://github.com/F41S3/Expense-Manager-Project",
         },
         {
             "title": "Various Machine Learning Models",

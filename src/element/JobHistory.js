@@ -56,8 +56,7 @@ export default function JobHistory() {
                                    url={job.link}
                                    img={job.img}
                                    alt={job.company}
-                        >
-                        </ImageLink>
+                        />
                     </div>
                     <p>{job.desc}</p>
                     <p>Tags: {job.tags.join(", ")}</p>

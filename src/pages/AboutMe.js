@@ -11,10 +11,10 @@ import ParticleBackground from "../element/ParticleBackground";
 export default function AboutMe() {
     return (
         <div>
-            <ParticleBackground></ParticleBackground>
-            <Header></Header>
-            <NameTitle></NameTitle>
-            <Footer></Footer>
+            <ParticleBackground/>
+            <Header/>
+            <NameTitle/>
+            <Footer/>
         </div>
 
     );

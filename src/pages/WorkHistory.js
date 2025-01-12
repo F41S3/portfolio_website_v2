@@ -11,15 +11,15 @@ export default function WorkHistory() {
 
     return (
         <div>
-            <ParticleBackground></ParticleBackground>
-            <Header></Header>
+            <ParticleBackground/>
+            <Header/>
             {/* Work Experience Section */}
-            <JobHistory></JobHistory>
+            <JobHistory/>
 
             {/* Education Section */}
-            <Education></Education>
+            <Education/>
 
-            <Footer></Footer>
+            <Footer/>
         </div>
 
     );

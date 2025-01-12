@@ -8,7 +8,7 @@ export default function NameTitle() {
     return (
         <div>
             <h1 className="nameTitle">Alex Pettipas</h1>
-            <img className="selfie" src={selfie} alt={alt_attr}></img>
+            <img className="selfie" src={selfie} alt={alt_attr}/>
         </div>
     )
 }

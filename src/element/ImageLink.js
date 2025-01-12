@@ -1,11 +1,22 @@
 import React from "react";
+import PropTypes from 'prop-types'
 
-
+/**
+ * ImageLink component
+ * This component represents the footer section of the application.
+ *
+ * @param {object} props - Component properties.
+ * @param {array} props.url - String representing url you want to direct to.
+ * @param {array} props.img - String representing the image to display.
+ * @param {array} props.alt - String for the tag for the image.
+ *
+ * @returns {JSX.Element} The JSX element representing the footer.
+ */
 export default function ImageLink({url, img, alt}) {
     ImageLink.propTypes = {
-        url: url.string,
-        img: img.string,
-        alt: alt,
+        url: PropTypes.string,
+        img: PropTypes.string,
+        alt: PropTypes.string,
     }
     ImageLink.defaultProps = {
         url: "",

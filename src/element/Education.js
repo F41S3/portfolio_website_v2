@@ -2,8 +2,15 @@ import React from "react";
 import './css/styles.css'
 import ImageLink from "./ImageLink";
 
+/**
+ * Education function
+ * This component displays educational background information.
+ *
+ * @returns {JSX.Element} The JSX element representing the education section.
+ */
 export default function Education() {
-
+    // Define an array of objects containing education details
+    // TODO: setup database hooks to fetch up to date information
     const education = [
         {
             "degree": "Bachelors Degree",
@@ -23,14 +30,20 @@ export default function Education() {
     return (
         <div>
             <h2>Education</h2>
+            {/*
+            * Map over the education array and render each item.
+            * Use index as key to ensure unique keys for React reconciliation.
+            */}
             {education.map((school, index) => (
                 <div key={index} className="content-container">
+                    {/* Container for the institution's logo */}
                     <div className={"logo-container"}>
+                        {/* Render ImageLink component with school details */}
                         <ImageLink
                             url={school.link}
                             img={school.img}
                             alt={"Logo"}
-                        ></ImageLink>
+                        />
                     </div>
                     <h3>{school.degree}</h3>
                     <h4>{school.field}</h4>
@@ -40,6 +53,4 @@ export default function Education() {
             ))}
         </div>
     )
-
-
 }

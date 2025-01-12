@@ -1,10 +1,11 @@
 import React from "react";
 import './css/styles.css'
+import PropTypes from "prop-types";
 
 
 export default function YoutubeEmbed({embedID}) {
     YoutubeEmbed.propTypes = {
-        embedID: embedID.string
+        embedID: PropTypes.string
     }
     YoutubeEmbed.defaultProps = {
         embedID: ""

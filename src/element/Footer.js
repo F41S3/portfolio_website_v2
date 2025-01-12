@@ -1,6 +1,11 @@
 import './css/styles.css'
 
-
+/**
+ * Footer component
+ * This component represents the footer section of the application.
+ *
+ * @returns {JSX.Element} The JSX element representing the footer.
+ */
 export default function Footer() {
     return (
         <footer id="footer" className="footer">

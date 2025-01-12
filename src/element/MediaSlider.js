@@ -6,6 +6,13 @@ import YoutubeEmbed from "./YoutubeEmbed";
 export default function MediaSlider({ medias }) {
     const [currentIndex, setCurrentIndex] = useState(0);
 
+    MediaSlider.propTypes = {
+        medias: medias.array
+    }
+    MediaSlider.defaultProps = {
+        medias: {}
+    }
+
     const handlePrev = () => {
         if (currentIndex > 0) {
             setCurrentIndex(currentIndex - 1);

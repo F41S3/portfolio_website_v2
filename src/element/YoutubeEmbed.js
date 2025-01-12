@@ -3,6 +3,13 @@ import './css/styles.css'
 
 
 export default function YoutubeEmbed({embedID}) {
+    YoutubeEmbed.propTypes = {
+        embedID: embedID.string
+    }
+    YoutubeEmbed.defaultProps = {
+        embedID: ""
+    }
+
     return (
         <div className="video-responsive">
             <iframe

@@ -10,11 +10,11 @@ import ParticleBackground from "../element/ParticleBackground";
 export default function HomePage() {
     return (
         <div>
-            <ParticleBackground></ParticleBackground>
-            <Header></Header>
-            <NameTitle></NameTitle>
+            <ParticleBackground/>
+            <Header/>
+            <NameTitle/>
             <Showcase/>
-            <Footer></Footer>
+            <Footer/>
         </div>
 
     );

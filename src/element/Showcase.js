@@ -1,7 +1,12 @@
 import React from 'react'
 import MediaSlider from "./MediaSlider.js"
 
-
+/**
+ * Showcase component
+ * This component represents a showcase for a list of projects, generated sequentially.
+ *
+ * @returns {JSX.Element} The JSX element representing the footer.
+ */
 export default function Showcase() {
 
     const project_data = [
@@ -50,10 +55,18 @@ export default function Showcase() {
 
     return (
         <div className="showcase-container">
+            {/**
+             * Map over the project_data array and render each project entry.
+             * Use index as key to ensure unique keys for React reconciliation.
+             */}
             {project_data.map((project, index) => (
                 <div key={index} className="project-entry">
                     <h2>{project.title}</h2>
                     <p>{project.desc}</p>
+                    {/*
+                     * Check if the project has images or a video, and render the MediaSlider component if true.
+                     * This is done using the conditional expression (project.img.length > 0 || project.vid !== "").
+                     */}
                     {(project.img.length > 0 || project.vid !== "") && (
                         <div className="sliderContainer">
                             <MediaSlider

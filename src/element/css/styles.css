@@ -1,15 +1,39 @@
+/* Global Styles */
+
+body {
+    /* Set font family for the entire page */
+    font-family: sans-serif;
+    /* Set text color for the entire page */
+    color: black;
+}
+
+/* Header Styles */
+
 header {
+    /* Display header as a flex container */
     display: flex;
+    /* Justify content to space between elements */
     justify-content: space-between;
+    /* Align items to center vertically */
     align-items: center;
+    /* Add padding for spacing */
     padding: 20px;
+    /* Set background color and text color */
     background-color: #333;
     color: #fff;
 }
+
+/* Page Title Styles */
+
 .pageTitle {
+    /* Set text color for page title */
     color: white;
+    /* Remove default margin */
     margin: 0;
 }
+
+/* Dropdown Button Styles */
+
 
 .dropbtn {
     background-color: black;
@@ -68,37 +92,57 @@ body {
 }
 
 /* Footer Styles */
+
 .footer {
+    /* Position footer relative to its parent */
     position: relative;
+    /* Align footer to the bottom of its parent */
     bottom: 0;
+    /* Set width and padding for spacing */
     width: 100%;
     padding: 20px;
+    /* Set background color and text color */
     background-color: #333;
     color: #fff;
 }
 
+/* Container Styles */
+
 .container {
+    /* Set maximum width for container */
     max-width: 600px;
+    /* Center container horizontally */
     margin: auto;
 }
 
+/* Footer Legal Text Styles */
+
 .footer-legal {
+    /* Align legal text to the center of its parent */
     text-align: center;
 }
 
+/* Showcase Container Styles */
+
 .showcase-container {
+    /* Display showcase as a flex container with column direction */
     display: flex;
     flex-direction: column;
+    /* Align items to the center of their parent */
     align-items: center;
+    /* Add padding for spacing and set maximum width */
     padding: 20px;
     margin-left: auto;
     margin-right: auto;
     max-width: 1200px;
 }
 
+/* Project Entry Styles */
 
 .project-entry {
+    /* Set bottom margin for project entries */
     margin-bottom: 40px;
+    /* Set width, background color, and add rounded corners */
     width: 80%;
     background-color: #f0f0f0;
     padding: 20px;
@@ -106,11 +150,17 @@ body {
     box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
 }
 
+/* Project Entry Heading Styles */
+
 .project-entry h2 {
+    /* Remove default top margin */
     margin-top: 0;
 }
 
+/* Logo Styles */
+
 .logo {
+    /* Display logo as a block element with maximum width and height */
     display: block;
     max-width:230px;
     max-height:95px;
@@ -118,64 +168,92 @@ body {
     height: auto;
 }
 
+/* Media Container Styles */
+
 .media-container {
+    /* Display media container as a flex container with wrap direction */
     display: flex;
     flex-wrap: wrap;
+    /* Align items to the center of their parent */
     justify-content: center;
 }
 
+/* Media Image Styles */
+
 .media-container img {
+    /* Set width and height for images in media container */
     width: 45%;
     height: auto;
+    /* Add margin for spacing */
     margin: 10px;
 }
 
+/* Video Responsive Styles */
+
 .video-responsive {
+    /* Position video relative to its parent */
     position: relative;
     overflow: hidden;
+    /* Set width and height for video */
     width: 100%;
 }
 
+/* Video Responsive After Pseudo-Element Styles */
+
 .video-responsive::after {
+    /* Display pseudo-element as a block element */
     display: block;
     content: "";
     padding-top: 56.25%;
 }
 
+/* Video Iframe Styles */
+
 .video-responsive iframe {
+    /* Position iframe relative to its parent */
     position: absolute;
     top: 0;
     left: 0;
+    /* Set width and height for iframe */
     width: 100%;
     height: 100%;
 }
 
-/* For responsive design */
+/* Responsive Design Media Queries */
+
 @media only screen and (max-width: 768px) {
+    /* Update project entry styles for smaller screens */
     .project-entry {
         width: 90%;
     }
+
+    /* Update page title styles for smaller screens */
     .pageTitle {
         text-align: center;
         margin-right: 0;
     }
 
+    /* Update prev and next button styles for smaller screens */
     .prev-button, .next-button {
         margin-bottom: 10px;
     }
 
+    /* Update media slider image and video styles for smaller screens */
     .media-slider img, .media-container video {
         width: 90%;
         height: auto;
         margin: 10px;
     }
 
+    /* Update contact container styles for smaller screens */
     .contact-container {
         max-width: 80vw;
         padding-top: calc(100vh / 2);
         margin-left: auto;
         margin-right: auto;
     }
+
+    /* Update contact container paragraph styles for smaller screens */
     .contact-container p {
         font-size: 18px;
     }
@@ -184,27 +262,34 @@ body {
 /* Name Title Styles */
 
 .nameTitle {
+    /* Set font size for name title */
     font-size: 36px;
+    /* Add bottom margin for spacing */
     margin-bottom: 10px;
 }
 
 .selfie {
+    /* Set width, height, and add rounded corners for selfie image */
     width: 300px;
     height: auto;
     border-radius: 50%;
+    /* Add top margin for spacing */
     margin-top: 20px;
 }
 
 .particle_background {
+    /* Position particle background relative to its parent */
     position: absolute;
     top: 0;
     left: 0;
+    /* Set width, height, and z-index for particle background */
     width: 100%;
     height: 100%;
     z-index: -1;
 }
 
 .logo {
+    /* Display logo as a block element with maximum width and height */
     display: block;
     max-width:100px;
     max-height:95px;
@@ -213,6 +298,7 @@ body {
 }
 
 .logo-container a img{
+    /* Display logo image as a block element with maximum width and height */
     display: block;
     max-width:250px;
     max-height:95px;
@@ -221,26 +307,30 @@ body {
 }
 
 .project-entry {
+    /* Add bottom margin for project entries */
     margin-bottom: 20px;
 }
 
 .slider {
+    /* Position slider relative to its parent */
     position: relative;
+    /* Set height and display flex container with center alignment */
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-
-
 .button-container {
+    /* Display button container as a flex container with space between elements */
     display: flex;
     justify-content: space-between;
+    /* Add top margin for spacing */
     margin-top: 20px;
 }
 
 .prev-button, .next-button {
+    /* Set background color, text color, and add rounded corners for prev and next buttons */
     background-color: #4f4f4f;
     color: white;
     border-radius: 5px;
@@ -250,22 +340,24 @@ body {
 }
 
 .prev-button {
+    /* Align prev button to the right of its parent */
     margin-right: auto;
 }
 
 .next-button {
+    /* Align next button to the left of its parent */
     margin-left: auto;
 }
 
 .slide {
+    /* Set opacity and transition duration for slide */
     opacity: 0;
     transition-duration: 1s;
 }
 
 .slide.active {
+    /* Set opacity and transition duration for active slide */
     opacity: 1;
     transition-duration: 1s;
     transform: scale(1.08);
 }
-
-

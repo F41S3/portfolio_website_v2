@@ -1,9 +1,17 @@
 import React from "react";
 import ImageLink from "./ImageLink";
 
-
+/**
+ * JobHistory component
+ * This component displays a list of job experiences, including title, company, description, and tags.
+ *
+ * @returns {JSX.Element} The JSX element representing the job history section.
+ */
 export default function JobHistory() {
-
+    /**
+     * Define an array of objects containing job information.
+     * TODO: query server to obtain this data
+     */
     const jobs = [
         {
             "title": "Charge Hand",
@@ -48,6 +56,10 @@ export default function JobHistory() {
     return (
         <div>
             <h2>Job History</h2>
+            {/*
+              * Map over the jobs array and render each item.
+              * Use index as key to ensure unique keys for React reconciliation.
+            */}
             {jobs.map((job, index) => (
                 <div key={index} className="content-container">
                     <h3>{job.title}</h3>
@@ -59,6 +71,7 @@ export default function JobHistory() {
                         />
                     </div>
                     <p>{job.desc}</p>
+                    {/* Tags or keywords associated with the job, displayed as a comma-separated list */}
                     <p>Tags: {job.tags.join(", ")}</p>
                 </div>
             ))}

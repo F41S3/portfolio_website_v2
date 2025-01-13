@@ -10,10 +10,10 @@ import ContactDetails from "../element/ContactDetails";
 export default function Contact() {
     return (
         <div>
-            <ParticleBackground></ParticleBackground>
-            <Header></Header>
-            <ContactDetails></ContactDetails>
-            <Footer></Footer>
+            <ParticleBackground/>
+            <Header/>
+            <ContactDetails/>
+            <Footer/>
         </div>
 
     );

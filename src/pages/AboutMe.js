@@ -5,9 +5,6 @@ import Footer from "../element/Footer";
 import NameTitle from "../element/NameTitle";
 import ParticleBackground from "../element/ParticleBackground";
 
-
-
-
 export default function AboutMe() {
     return (
         <div>

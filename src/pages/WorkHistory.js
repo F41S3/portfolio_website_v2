@@ -6,7 +6,6 @@ import ParticleBackground from "../element/ParticleBackground";
 import JobHistory from "../element/JobHistory";
 import Education from "../element/Education";
 
-
 export default function WorkHistory() {
 
     return (

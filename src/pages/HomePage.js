@@ -6,7 +6,6 @@ import NameTitle from "../element/NameTitle";
 import Showcase from "../element/Showcase";
 import ParticleBackground from "../element/ParticleBackground";
 
-
 export default function HomePage() {
     return (
         <div>

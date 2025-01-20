@@ -34,15 +34,6 @@ export default function Showcase() {
             "repositoryURL": "https://github.com/F41S3/Expense-Manager-Project",
         },
         {
-            "title": "Various Machine Learning Models",
-            "desc": "This is a collection of various machine learning algorithms I have implemented\n" +
-                "in python both from scratch and using various libraries and frameworks.",
-            "vid": [""],
-            "img": ["../media/logo.svg"],
-            "tags": ["Python", "Numpy", "Torch", "Matplotlib", "Google Colab", "Vectorization"],
-            "repositoryURL": "https://github.com/F41S3/ML_Models",
-        },
-        {
             "title": "My Portfolio",
             "desc": "This is a project I developed using Node.js to showcase my work. \n",
             "vid": [""],

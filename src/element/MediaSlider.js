@@ -55,6 +55,12 @@ export default function MediaSlider({ medias }) {
         }
     };
 
+
+    // Handle thumbnail click
+    const handleClick = (index) => {
+        setCurrentIndex(index);
+    };
+
     return (
         <div className="media-slider">
             {/* Conditionally render image or YouTube embed based on media type */}
@@ -65,10 +71,46 @@ export default function MediaSlider({ medias }) {
                     embedID={medias[currentIndex].src}
                     />
             )}
+
+
+
             <div className="button-container">
                 <button onClick={() => handlePrev()} className="prev-button">
                     Previous
                 </button>
+                {/* Thumbnail container */}
+                <div className="thumbnail-container">
+                    {medias.map((media, index) => (
+                        // Only display image thumbnails
+                        media.type === 'image' ? (
+                            <button
+                                key={index}
+                                onClick={() => handleClick(index)}
+                                className={`thumbnail ${currentIndex === index ? 'active' : ''}`}
+                            >
+                                <img
+                                    src={process.env.PUBLIC_URL + media.src}
+                                    alt={`Thumbnail ${index}`}
+                                    className="thumbnail-image"
+                                />
+                            </button>
+                        ) : (
+                            // Display YouTube icon for video type
+                            <button
+                                key={index}
+                                onClick={() => handleClick(index)}
+                                className={`thumbnail ${currentIndex === index ? 'active' : ''}`}
+                            >
+                                <img
+                                    src={"http://img.youtube.com/vi/" + media.src + "/1.jpg"}
+                                    alt={`Thumbnail ${index}`}
+                                    className="thumbnail-image"
+                                />
+                            </button>
+
+                        )
+                    ))}
+                </div>
                 <button onClick={() => handleNext()} className="next-button">
                     Next
                 </button>

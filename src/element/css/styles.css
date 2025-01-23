@@ -203,6 +203,31 @@ https://www.w3schools.com/howto/howto_css_three_columns.asp
     height: 100%;
 }
 
+.thumbnail-container {
+    display: flex;
+    overflow-x: auto;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.thumbnail {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.thumbnail-image {
+    max-height: 80px; /* Adjust as needed */
+    height: auto;
+    border-radius: 5px;
+}
+
+.active .thumbnail-image {
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+
+
 /* Responsive Design Media Queries */
 @media only screen and (max-width: 768px) {
     /* Update project entry styles for smaller screens */
@@ -218,7 +243,22 @@ https://www.w3schools.com/howto/howto_css_three_columns.asp
 
     /* Update prev and next button styles for smaller screens */
     .prev-button, .next-button {
-        margin-bottom: 10px;
+        background-color: #4f4f4f;
+        color: white;
+        border-radius: 50%;
+        padding: 12px; /* Makes buttons smaller */
+        min-width: auto; /* Removes fixed width constraint */
+        font-size: 16px;
+        cursor: pointer;
+        border: none;
+    }
+
+    .prev-button {
+        margin-right: auto;
+    }
+
+    .next-button {
+        margin-left: auto;
     }
 
     /* Update media slider image and video styles for smaller screens */
@@ -304,30 +344,26 @@ https://www.w3schools.com/howto/howto_css_three_columns.asp
 }
 
 .button-container {
-    /* Display button container as a flex container with space between elements */
     display: flex;
     justify-content: space-between;
-    /* Add top margin for spacing */
     margin-top: 20px;
 }
 
 .prev-button, .next-button {
-    /* Set background color, text color, and add rounded corners for prev and next buttons */
     background-color: #4f4f4f;
     color: white;
     border-radius: 5px;
     padding: 10px 20px;
+    min-width: 122px;
     font-size: 16px;
     cursor: pointer;
 }
 
 .prev-button {
-    /* Align prev button to the right of its parent */
     margin-right: auto;
 }
 
 .next-button {
-    /* Align next button to the left of its parent */
     margin-left: auto;
 }
 

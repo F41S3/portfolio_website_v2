@@ -14,7 +14,7 @@ export default function NameTitle() {
     let selfie = '../media/selfie.jpg';
     let alt_attr = 'sites author'
     return (
-        <div>
+        <div className="title-container">
             <h1 className="nameTitle">Alex Pettipas</h1>
             <img
                 className="selfie"

@@ -129,6 +129,11 @@ https://www.w3schools.com/howto/howto_css_three_columns.asp
     max-width: 1200px;
 }
 
+.feature-list {
+    text-align: left;
+
+}
+
 /* Project Entry Styles */
 .project-entry {
     /* Set bottom margin for project entries */

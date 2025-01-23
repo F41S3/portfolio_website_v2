@@ -12,10 +12,14 @@ export default function Showcase() {
     const project_data = [
         {
             "title": "Plane Flight Sim",
-            "desc": "This is an end of term project I wrote in C using OpenGL. Some notably interesting\n" +
-                "features are the propellers speed up or slow down based on the users speed.\n" +
-                "Additionally, the mountains are procedurally generated using a self-written Perlin\n" +
-                "noise algorithm.",
+            "desc": "The Flight-Sim Final Project is a C-based simulation that creates an animated " +
+                "flight over mountainous terrain generated using Perlin noise. The project was " +
+                "developed as a final assignment for a computer animation course, with the goal of " +
+                "implementing and visualizing perlin noise in a dynamic 3D environment.\n",
+            "features": ["Mountain Generation: Utilizes Perlin noise algorithm to generate realistic-looking mountain terrains.",
+                "Flight Simulation: Simulates the experience of flying over these mountains, providing an immersive visualization.",
+                "OpenGL Rendering: Implements graphics using OpenGL for high-performance rendering in a windowed environment.",
+                "FreeGLUT Framework: Leverages FreeGLUT for handling windowing and user interaction."],
             "vid": "lKt3g4m6IyA",
             "img": ["/media/plane_im1.png", "/media/plane_im2.png"],
             "tags": ["C", "OpenGL", "GLSL", "gcc"],
@@ -23,8 +27,14 @@ export default function Showcase() {
         },
         {
             "title": "Expense Management App",
-            "desc": "Developed by a team of 8 dedicated students as part of our Mobile Computing course, Expense Manager" +
-                " is the culmination of our collective efforts to create an intuitive and user-friendly application  that meets the evolving needs of modern finance management. Our goal was to design an app that would empower users with comprehensive tools for managing their personal finances, making it easier to make group purchases and equally share collaborative expenses.",
+            "desc": "Developed by a team of 8 dedicated students as part of our Mobile Computing " +
+                "course. Expense Manager is a simple, intuitive, stable, and feature-rich " +
+                "expense tracking app developed using Kotlin and Android Studio. The app allows" +
+                " users to control their spending, plan budgets, track expenses, and income.",
+            "features": ["Expense Tracking: Users can log daily expenses with categories (e.g., food, transportation, entertainment)",
+            "Budget Planning: The app allows users to set budgets and track progress.",
+            "Expense Splitting: Users can add expenses and split bills between multiple groups of people.",
+            "Income Tracking: Users can record income from various sources."],
             "vid": ["", ""], // Empty video link
             "img": ["../media/expense_manager_1.png", "../media/expense_manager_2.png", "../media/expense_manager_3.png"],
             "tags": ["Android", "Kotlin", "Firebase", "NoSQL", "AndoridX", "Gradle"],
@@ -32,7 +42,21 @@ export default function Showcase() {
         },
         {
             "title": "My Portfolio",
-            "desc": "This is a project I developed using Node.js to showcase my work. \n",
+            "desc": "Welcome to my portfolio website built using React! This modern and responsive" +
+                " web application showcases my skills, projects, experiences, and contact " +
+                "information. The website is designed with simplicity and functionality in mind, " +
+                "ensuring an optimal user experience across all devices.",
+            "features": [
+                "Responsive Design: The website adapts seamlessly to different screen sizes, providing a " +
+                "consistent and visually appealing layout on desktops, tablets, and mobile devices.",
+                "Project Gallery: A showcase of my most recent and impactful projects. Each project includes a brief " +
+                "description, technologies used, and live or demo links where applicable.",
+                "Skill Set Display: An interactive section highlighting the programming languages, frameworks, " +
+                "tools, and methodologies I am proficient in.",
+                "Contact Information: Easy-to-find contact details to facilitate potential collaborations or inquiries.",
+                "Clean and Modern UI/UX: A minimalist design approach that emphasizes readability and ease of " +
+                "navigation. Smooth animations and transitions enhance user engagement without overwhelming the interface."
+            ],
             // No video link provided
             "img": ["../media/website_uml.png", "../media/work_history_uml.png"],
             "tags": ["JavaScript", "Node.js", "React.js", ""],
@@ -47,6 +71,12 @@ export default function Showcase() {
                 <div key={index} className="project-entry">
                     <h2>{project.title}</h2>
                     <p>{project.desc}</p>
+                    <h3>Key Features</h3>
+                    <div className={"feature-list"}>{project.features.map((feature) => (
+                        <ul>
+                            <li>{feature}</li>
+                        </ul>
+                    ))}</div>
 
                     {/* Check if the project has images or a valid video link to render MediaSlider */}
                     {(project.img?.length > 0 || (typeof project.vid === 'string' && project.vid.trim() !== '')) && (

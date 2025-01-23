@@ -393,10 +393,9 @@ https://www.w3schools.com/howto/howto_css_three_columns.asp
 .prev-button, .next-button {
     background-color: #4f4f4f;
     color: white;
-    border-radius: 5px;
-    padding: 10px 20px;
-    min-width: 122px;
-    font-size: 16px;
+    border-radius: 50%;
+    padding: 10px 10px;
+    min-width: auto;
     cursor: pointer;
 }
 

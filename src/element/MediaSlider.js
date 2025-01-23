@@ -56,7 +56,12 @@ export default function MediaSlider({ medias }) {
     };
 
 
-    // Handle thumbnail click
+    /**
+     * Handle thumbnail click event.
+     * Changes displayed media index to the clicked on thumbnail.
+     *
+     * @returns {void}
+     */
     const handleClick = (index) => {
         setCurrentIndex(index);
     };
@@ -102,7 +107,7 @@ export default function MediaSlider({ medias }) {
                                 className={`thumbnail ${currentIndex === index ? 'active' : ''}`}
                             >
                                 <img
-                                    src={"http://img.youtube.com/vi/" + media.src + "/1.jpg"}
+                                    src={"https://img.youtube.com/vi/" + media.src + "/1.jpg"}
                                     alt={`Thumbnail ${index}`}
                                     className="thumbnail-image"
                                 />

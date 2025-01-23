@@ -227,6 +227,47 @@ https://www.w3schools.com/howto/howto_css_three_columns.asp
     box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
 }
 
+/* Button styling */
+.btn-github {
+    cursor: pointer;
+    display: inline-flex; /* Allows button to act as a flex container without full width */
+    gap: 0.5rem;
+    border: none;
+
+    transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+    border-radius: 100px; /* Creates a pill-shaped button */
+    font-weight: 800;
+
+    justify-content: center; /* Aligns child elements horizontally in the center */
+
+    padding: 0.75rem 1rem;
+    font-size: 0.825rem;
+    line-height: 1rem;
+
+    background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent dark background */
+    box-shadow:
+            inset 0 -1px 0 0 rgba(255,255,255, .04), /* Subtle inner shadow top */
+            inset 0 -3px 6px rgba(255,255,255,.1);    /* Slightly more pronounced inner shadow */
+    color: #fff;                                /* White text for contrast */
+    text-decoration: none;
+}
+
+/* Hover effects */
+.btn-github:hover {
+    box-shadow:
+            inset 0 -1px 0 0 rgba(255,255,255,.08),   /* Darker top inner shadow on hover */
+            inset 0 -3px 6px rgba(252,232,3,.1);       /* Colored inner shadow for effect */
+    color: #fce803;                              /* Bright yellow text on hover */
+    transform: translateY(-.25rem);               /* Subtle upward movement */
+    background-color: rgba(0,0,0,.5);           /* Slightly darker background on hover */
+}
+
+/* Container styling to center the button */
+.showcase-container {
+    display: flex;       /* Enable Flexbox layout */
+    justify-content: center;  /* Center child elements horizontally */
+    align-items: center;     /* Center child elements vertically */
+}
 
 /* Responsive Design Media Queries */
 @media only screen and (max-width: 768px) {

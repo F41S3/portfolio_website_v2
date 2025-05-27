@@ -70,32 +70,20 @@ export default function MediaSlider({ medias }) {
         <div className="media-slider">
             {/* Conditionally render image or YouTube embed based on media type */}
             {medias[currentIndex].type === 'image' ? (
-                <img src={process.env.PUBLIC_URL + medias[currentIndex].src} alt="Placeholder" />
+                <img src={process.env.PUBLIC_URL + medias[currentIndex].src} alt="Placeholder"/>
             ) : (
                 <YoutubeEmbed
                     embedID={medias[currentIndex].src}
-                    />
+                />
             )}
 
 
 
+
+
             <div className="button-container">
-                <button onClick={() => handlePrev()} className="prev-button">
-                    <svg width="75%"
-                         height="100px"
-                         viewBox="0 0 24 24"
-                         fill="none"
-                         xmlns="http://www.w3.org/2000/svg"
-                    >
-                        <path
-                            d="M6 12H18M6 12L11 7M6 12L11 17"
-                            stroke="#000000"
-                            stroke-width="2"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                        />
-                    </svg>
-                </button>
+                <div className="arrow" onClick={() => handlePrev()}></div>
+
                 {/* Thumbnail container */}
                 <div className="thumbnail-container">
                     {medias.map((media, index) => (
@@ -128,24 +116,10 @@ export default function MediaSlider({ medias }) {
 
                         )
                     ))}
+
                 </div>
-                <button onClick={() => handleNext()} className="next-button">
-                    <svg
-                        width="75%"
-                        height="100px"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                    >
-                        <path
-                            d="M6 12H18M18 12L13 7M18 12L13 17"
-                            stroke="#000000"
-                            stroke-width="2"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                        />
-                    </svg>
-                </button>
+                <div className="arrow_right" onClick={() => handleNext()}></div>
+
             </div>
         </div>
     );

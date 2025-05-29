@@ -1,5 +1,5 @@
 import React from "react";
-import '../element/css/styles.css'
+import '../element/css/styles.scss'
 import Header from "../element/Header";
 import Footer from "../element/Footer";
 import ParticleBackground from "../element/ParticleBackground";

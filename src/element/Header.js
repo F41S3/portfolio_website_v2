@@ -1,6 +1,6 @@
 import {Link} from "react-router-dom";
 import React, { useEffect} from "react";
-import './css/styles.css'
+import './css/styles.scss'
 
 /**
  * Header component
@@ -17,16 +17,34 @@ export default function Header() {
         document.title = "Portfolio of Alex Pettipas";
     }, []);
     return (
+
         <header>
-            <h1 className="pageTitle">Portfolio</h1>
+            <h1 className="pageTitle">Portfolio of Alex Pettipas</h1>
             <div className="dropdown">
-                <button className="dropbtn" >Menu</button>
-                <div className="dropdown-content">
-                    <Link to="/">Homepage</Link>
-                    <Link to="/Contact">Contact</Link>
-                    <Link to="/WorkHistory">See Work History</Link>
-                </div>
+                <nav className="nav">
+                    <input type="checkbox" className="nav__cb" id="menu-cb"/>
+                    <div className="nav__content">
+                        <ul className="nav__items">
+                            <li className="nav__item">
+                            <span className="nav__item-text">
+                                <Link to="/">Home</Link>
+                            </span>
+                            </li>
+                            <li className="nav__item">
+                            <span className="nav__item-text">
+                                <Link to="/WorkHistory">Resume</Link>
+                            </span>
+                            </li>
+                            <li className="nav__item">
+                            <span className="nav__item-text">
+                                <Link to="/Contact">Contact</Link>
+                            </span>
+                            </li>
+                        </ul>
+                    </div>
+                    <label className="nav__btn" htmlFor="menu-cb"></label>
+                </nav>
             </div>
         </header>
-    )
+)
 }

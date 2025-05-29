@@ -1,0 +1,40 @@
+/* Container Styles */
+.container {
+  max-width: 600px;
+  margin: auto;
+}
+
+/* Showcase Container Styles */
+.showcase-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+}
+
+/* Project Entry Styles */
+.project-entry {
+  margin-bottom: 40px;
+  width: 80%;
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Media Container Styles */
+.media-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Media Image Styles */
+.media-container img {
+  width: 45%;
+  height: auto;
+  margin: 10px;
+}

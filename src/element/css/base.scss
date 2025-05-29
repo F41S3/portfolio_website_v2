@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+/* Global Styles */
+body {
+  font-family: sans-serif;
+  color: black;
+}
+
+$lightBlue: darken(white, 50%);
+$darkGrey: darkgrey;
+
+// Custom Variables for Navigation
+$numOfItems: 4;
+$navAT: 1s;
+$textDelayStep: 0.1s;
+$font: Helvetica, Arial, sans-serif;

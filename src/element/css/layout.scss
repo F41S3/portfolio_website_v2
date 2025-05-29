@@ -1,0 +1,26 @@
+/* Header Styles */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+}
+
+/* Footer Styles */
+.footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+}
+
+/* Page Title Styles */
+.pageTitle {
+  color: white;
+  margin: 0;
+  font-size: 25px;
+}

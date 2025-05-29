@@ -82,10 +82,11 @@ export default function MediaSlider({ medias }) {
 
 
             <div className="button-container">
-                <div className="arrow" onClick={() => handlePrev()}></div>
+
 
                 {/* Thumbnail container */}
                 <div className="thumbnail-container">
+                    <div className="arrow" onClick={() => handlePrev()}></div>
                     {medias.map((media, index) => (
                         // Only display image thumbnails
                         media.type === 'image' ? (
@@ -116,9 +117,9 @@ export default function MediaSlider({ medias }) {
 
                         )
                     ))}
-
+                    <div className="arrow_right" onClick={() => handleNext()}></div>
                 </div>
-                <div className="arrow_right" onClick={() => handleNext()}></div>
+
 
             </div>
         </div>

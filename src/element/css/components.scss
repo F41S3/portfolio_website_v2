@@ -50,3 +50,149 @@
 .dropdown:hover .dropbtn {
   background-color: green;
 }
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.arrow,
+.arrow_right {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  display: block;
+}
+
+/* Container Styles */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Showcase Container Styles */
+.showcase-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+/* Project Entry Styles */
+.project-entry {
+  margin-bottom: 40px;
+  width: 90%;
+  background-color: #ffffff;
+  padding: 32px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Media Container Styles */
+.media-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 32px;
+  padding-bottom: 32px;
+  margin-top: 40px;
+}
+
+/* Media Image Styles */
+.media-container img, .media-slider video {
+  width: 100%;
+  max-width: 568px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Media Slider Styles */
+.media-slider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  margin-top: 40px;
+}
+
+.button-container {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 32px;
+}
+
+.arrow, .arrow_right {
+  width: 50px;
+  height: 50px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+
+  &:hover {
+    background-color: #f4f4f4;
+    transform: scale(1.05);
+  }
+}
+
+.arrow_right {
+  flex-shrink: 0;
+}
+
+.thumbnail-container {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  padding: 0 16px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 16px;
+  min-width: 300px;
+}
+
+.thumbnail {
+  flex-shrink: 0;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 12px;
+  transition: all 0.2s ease-in-out;
+
+  &.active {
+    background-color: darkgray;
+    transform: scale(1.1);
+
+    .thumbnail-image {
+      filter: brightness(1.1);
+    }
+  }
+
+  .thumbnail-image {
+    width: 64px;
+    height: 64px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.2s ease-in-out;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+}

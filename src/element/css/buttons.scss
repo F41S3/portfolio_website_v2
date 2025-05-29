@@ -1,0 +1,304 @@
+/* Button styling */
+.btn-github {
+  cursor: pointer;
+  display: inline-flex; /* Allows button to act as a flex container without full width */
+  gap: 0.5rem;
+  border: none;
+
+  transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+  border-radius: 100px; /* Creates a pill-shaped button */
+  font-weight: 800;
+
+  justify-content: center; /* Aligns child elements horizontally in the center */
+
+  padding: 0.75rem 1rem;
+  font-size: 0.825rem;
+  line-height: 1rem;
+
+  background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent dark background */
+  box-shadow:
+          inset 0 -1px 0 0 rgba(255,255,255, .04), /* Subtle inner shadow top */
+          inset 0 -3px 6px rgba(255,255,255,.1);    /* Slightly more pronounced inner shadow */
+  color: #fff;                                /* White text for contrast */
+  text-decoration: none;
+}
+
+/* Hover effects */
+.btn-github:hover {
+  box-shadow:
+          inset 0 -1px 0 0 rgba(255,255,255,.08),   /* Darker top inner shadow on hover */
+          inset 0 -3px 6px rgba(252,232,3,.1);       /* Colored inner shadow for effect */
+  color: #fce803;                              /* Bright yellow text on hover */
+  transform: translateY(-.25rem);               /* Subtle upward movement */
+  background-color: rgba(0,0,0,.5);           /* Slightly darker background on hover */
+}
+
+
+/* MAIN VARIABLES FOR CUSTOMIZATION */
+$numOfItems: 4;
+$navAT: 1s;
+$textDelayStep: 0.1s;
+/* -------------------------------- */
+
+$font: Helvetica, Arial, sans-serif;
+
+$btnSize: 45px;
+$lineW: 28px;
+$lineH: 4px;
+$linesGap: 10px;
+$linesTotalH: $lineH*2 + $linesGap;
+$btnHorPad: ($btnSize - $lineW) / 2;
+$btnVertPad: ($btnSize - $linesTotalH) / 2;
+
+
+$itemsLeftPad: 20px;
+$itemsRightPad: $itemsLeftPad + $btnSize;
+$itemWidth: 70px;
+$navItemsWidth: $itemsLeftPad + $itemsRightPad + $itemWidth * $numOfItems;
+
+$textAT: $navAT - $textDelayStep * ($numOfItems - 1);
+$textFadeAT: 0.2s;
+$cub: cubic-bezier(.48,.43,.29,1.3);
+$backCub: cubic-bezier(0.49,-0.3,.68,1.23);
+$textCub: cubic-bezier(.48,.43,.7,2.5);
+
+.nav {
+  overflow: hidden;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: auto;
+  height: $btnSize;
+  margin-top: $btnSize/-2;
+  background: #fff;
+  border-radius: 5px;
+  transform: translate3d(-100%,0,0);
+  box-shadow: 0 10px 35px rgba(0,0,0,0.2);
+
+  &__cb {
+    z-index: -1000;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  &__content {
+    position: relative;
+    width: $btnSize;
+    height: 100%;
+    transition: width $navAT $backCub;
+
+    .nav__cb:checked ~ & {
+      transition: width $navAT $cub;
+      width: $navItemsWidth;
+    }
+  }
+
+  &__items {
+    position: relative;
+    width: $navItemsWidth;
+    height: 100%;
+    padding-left: $itemsLeftPad;
+    padding-right: $itemsRightPad;
+    list-style-type: none;
+    font-size: 0;
+  }
+
+  &__item {
+    display: inline-block;
+    vertical-align: top;
+    width: $itemWidth;
+    text-align: center;
+    color: #6C7784;
+    font-size: 14px;
+    line-height: $btnSize;
+    font-family: $font;
+    font-weight: bold;
+    perspective: 1000px;
+    transition: color 0.3s;
+    cursor: pointer;
+
+    &:hover {
+      color: $lightBlue;
+    }
+
+    &-text {
+      display: block;
+      height: 100%;
+      transform: rotateY(-70deg);
+      opacity: 0;
+      transition: transform $textAT $textCub, opacity $textAT;
+
+      .nav__cb:checked ~ .nav__content & {
+        transform: rotateY(0);
+        opacity: 1;
+        transition: transform $textAT $textCub, opacity $textFadeAT;
+      }
+
+      @for $i from 1 through $numOfItems {
+        .nav__item:nth-child(#{$i}) & {
+          transition-delay: ($numOfItems - $i) * $textDelayStep;
+        }
+
+        .nav__cb:checked ~ .nav__content .nav__item:nth-child(#{$i}) & {
+          transition-delay: ($i - 1) * $textDelayStep;
+        }
+      }
+    }
+  }
+
+  &__btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: $btnSize;
+    height: $btnSize;
+    padding: $btnVertPad $btnHorPad;
+    cursor: pointer;
+
+    &:before,
+    &:after {
+      content: "";
+      display: block;
+      width: $lineW;
+      height: $lineH;
+      border-radius: 2px;
+      background: black;
+      transform-origin: 50% 50%;
+      transition: transform $navAT $cub, background-color 0.3s;
+    }
+
+    &:before {
+      margin-bottom: $linesGap;
+    }
+
+    &:hover {
+      &:before,
+      &:after {
+        background: $lightBlue;
+      }
+    }
+
+    .nav__cb:checked ~ & {
+
+      &:before {
+        transform: translateY($linesGap/2 + $lineH/2) rotate(-225deg);
+      }
+
+      &:after {
+        transform: translateY($linesGap/-2 + $lineH/-2) rotate(225deg);
+      }
+    }
+  }
+}
+
+.arrow{
+  position:relative;
+  width:30px;
+  height: 30px;
+  cursor:pointer;
+  /*   border:solid 1px white; */
+  transition:0.5s;
+  overflow:hidden;
+}
+
+.arrow:hover{
+  /*  animation:borderAni 5s cubic-bezier(0, 0.6, 1, 0.4); */
+  border:solid 2px gray;
+  border-radius:50%;
+}
+.arrow:after{
+  position:absolute;
+  display:block;
+  content:"";
+  color:gray;
+  width: 20px;
+  height: 15px;
+  /*   border:solid 1px;  */
+  top:1px;
+  border-bottom:solid 2px;
+  transform:translatex(4px);
+}
+
+.arrow:before{
+  position:absolute;
+  display:block;
+  content:"";
+  color:gray;
+  width: 8px;
+  height: 8px;
+  /*   border:solid 1px;  */
+  border-top:solid 2px;
+  border-left:solid 2px;
+  top:50%;
+  left:2px;
+  transform-origin:0% 0%;
+  transform:rotatez(-45deg);
+
+}
+.arrow:hover:before{
+  animation: aniArrow01 1s cubic-bezier(0, 0.6, 1, 0.4) infinite 0.5s;
+}
+
+.arrow:hover:after{
+  animation: aniArrow02 1s cubic-bezier(0, 0.6, 1, 0.4) infinite 0.5s;
+}
+
+
+
+
+.arrow_right{
+  position:relative;
+  width:30px;
+  height: 30px;
+  cursor:pointer;
+  /*   border:solid 1px white; */
+  transition:0.5s;
+  overflow:hidden;
+}
+
+.arrow_right:hover{
+  /*  animation:borderAni 5s cubic-bezier(0, 0.6, 1, 0.4); */
+  border:solid 2px gray;
+  border-radius:50%;
+}
+.arrow_right:after{
+  position:absolute;
+  display:block;
+  content:"";
+  color:gray;
+  width: 20px;
+  height: 15px;
+  /*   border:solid 1px;  */
+  top:1px;
+  border-bottom:solid 2px;
+  transform:translatex(4px);
+}
+
+.arrow_right:before{
+  position:absolute;
+  display:block;
+  content:"";
+  color:gray;
+  width: 8px;
+  height: 8px;
+  /*   border:solid 1px;  */
+  border-top:solid 2px;
+  border-left:solid 2px;
+  top:50%;
+  left:25px;
+  transform-origin:0% 0%;
+  transform:rotatez(-225deg);
+
+}
+.arrow_right:hover:before{
+  animation: aniArrowRight01 1s cubic-bezier(0, 0.6, 1, 0.4) infinite 0.5s;
+}
+
+.arrow_right:hover:after{
+  animation: aniArrowRight02 1s cubic-bezier(0, 0.6, 1, 0.4) infinite 0.5s;
+}
+
+

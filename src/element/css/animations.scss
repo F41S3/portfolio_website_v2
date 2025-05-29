@@ -1,0 +1,36 @@
+/* Arrow animations */
+@keyframes aniArrow01 {
+  0% {
+    transform:rotatez(-45deg) translateY(30px) translateX(30px);
+  }
+  100% {
+    transform: rotatez(-45deg) translateY(-35px) translateX(-35px);
+  }
+}
+
+@keyframes aniArrow02 {
+  0% {
+    transform:translateX(45px);
+  }
+  100% {
+    transform:translateX(-44px);
+  }
+}
+
+@keyframes aniArrowRight01 {
+  0% {
+    transform:rotatez(-225deg) translateY(30px) translateX(30px);
+  }
+  100% {
+    transform: rotatez(-225deg) translateY(-35px) translateX(-35px);
+  }
+}
+
+@keyframes aniArrowRight02 {
+  0% {
+    transform:translateX(-35px);
+  }
+  100% {
+    transform:translateX(45px);
+  }
+}

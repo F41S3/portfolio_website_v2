@@ -1,6 +1,6 @@
 import {Link} from "react-router-dom";
 import React, { useEffect} from "react";
-import './css/styles.scss'
+import './css/style.scss'
 
 /**
  * Header component

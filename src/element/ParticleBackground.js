@@ -1,7 +1,7 @@
 import Particles from "react-particles";
 import { loadFull } from "tsparticles";
 import { useCallback } from "react";
-import './css/styles.scss'
+import './css/style.scss'
 
 
 /**

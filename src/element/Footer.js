@@ -1,4 +1,4 @@
-import './css/styles.scss'
+import './css/style.scss'
 
 /**
  * Footer component

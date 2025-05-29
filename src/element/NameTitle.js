@@ -1,5 +1,5 @@
 import React from "react";
-import './css/styles.scss'
+import './css/style.scss'
 
 /**
  * NameTitle component

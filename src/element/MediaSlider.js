@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './css/styles.scss';
+import './css/style.scss';
 import YoutubeEmbed from "./YoutubeEmbed";
 import PropTypes from "prop-types";
 

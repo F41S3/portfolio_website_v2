@@ -41,11 +41,17 @@ Configure Firebase credentials (google-services.json) for backend access.
 Set up PayPal API keys in the configuration files.
 ## Team Members
 Jonah Flynn - Role/Contribution
+
 U. Tokosu - Role/Contribution
+
 Nick H. - Role/Contribution
+
 Obaid Alam - Role/Contribution
+
 Peter Hu - Role/Contribution
+
 Alex Pettipas - Role/Contribution
+
 ...
-##License
+## License
 This project is part of a group assignment. Please contact the team for licensing details.

@@ -52,6 +52,5 @@ Peter Hu - Role/Contribution
 
 Alex Pettipas - Role/Contribution
 
-...
 ## License
 This project is part of a group assignment. Please contact the team for licensing details.

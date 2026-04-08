@@ -1,56 +1,70 @@
-# Quick Cash - Mobile Application
-## Overview
-Quick Cash is a Java-based mobile application designed to connect employers and employees for local job matching, electronic payments, and streamlined recruitment management. Built as a group project, it leverages Firebase for backend data storage and integrates with PayPal for secure transactions.
+# Getting Started with Create React App
 
-The app aims to simplify the hiring process by allowing employers to post urgent or standard jobs and manage applicants, while enabling employees to browse local opportunities, filter by skills/degrees, and connect payment systems directly.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Key Features
-### For Employees (Job Seekers)
-Local Job Discovery: View a list of jobs in your area with location-based filtering.
-Smart Filtering: Filter search results by field, degree, or specific skills to find the best match for your knowledge.
-Profile Management: Create and manage profiles including contact info, job history, and employer verification details.
-Payment Integration: Connect an online payment system (PayPal) per job for electronic compensation.
-Privacy Controls: Toggle visibility of private information to keep personal data safe.
-Notifications & Alerts: Receive alerts when suitable jobs appear or when employers apply your profile.
-Employer Insights: View employer profiles and reputation before applying.
-Safety Tools: Block employers with bad attitudes for a safer platform experience.
-### For Employers (Recruiters)
-Job Posting: Add detailed job descriptions, requirements, and set urgency flags to attract faster applicants.
-Applicant Management: Approve or disapprove employees for specific jobs; view applicant databases per job.
-Analytics Dashboard: Visualize income and reputation metrics to track app success.
-Meetup Scheduling: Set up meetings with candidates living near the company location to save time.
-Advanced Filtering: Filter applicants by age, location, or other criteria to narrow down choices quickly.
-Bot Management: Auto-delete spam/trash messages from bots to find employees faster.
-Instant Compensation: Use an online payment system for instant compensation tracking and verification records.
-## Technical Stack
-Language: Java (Mobile Application)
-Backend/Database: Firebase Database & Authentication
-Payment Gateway: PayPal Integration
-Location Services: GPS/Geolocation API for local job search
-Platform: Android (Implied by "Mobile Application" and Java context)
-## Project Status
-User Stories Completed: 17 out of planned stories.
-Current Phase: Feature Development & Integration.
-Next Steps: Finalizing UI/UX, Testing Payment Flows, and Deployment Preparation.
-## Installation & Setup (Placeholder)
-To run the project locally:
+## Available Scripts
 
-Clone the repository to your local machine.
-Open the project in Android Studio or your preferred Java IDE.
-Configure Firebase credentials (google-services.json) for backend access.
-Set up PayPal API keys in the configuration files.
-## Team Members
-Jonah Flynn - Role/Contribution
+In the project directory, you can run:
 
-U. Tokosu - Role/Contribution
+### `npm start`
 
-Nick H. - Role/Contribution
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-Obaid Alam - Role/Contribution
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-Peter Hu - Role/Contribution
+### `npm test`
 
-Alex Pettipas - Role/Contribution
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-## License
-This project is part of a group assignment. Please contact the team for licensing details.
+### `npm run build`
+
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
+
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
+
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### `npm run eject`
+
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

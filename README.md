@@ -1,11 +1,11 @@
-### Quick Cash - Mobile Application
+# Quick Cash - Mobile Application
 ## Overview
 Quick Cash is a Java-based mobile application designed to connect employers and employees for local job matching, electronic payments, and streamlined recruitment management. Built as a group project, it leverages Firebase for backend data storage and integrates with PayPal for secure transactions.
 
 The app aims to simplify the hiring process by allowing employers to post urgent or standard jobs and manage applicants, while enabling employees to browse local opportunities, filter by skills/degrees, and connect payment systems directly.
 
 ## Key Features
-# For Employees (Job Seekers)
+### For Employees (Job Seekers)
 Local Job Discovery: View a list of jobs in your area with location-based filtering.
 Smart Filtering: Filter search results by field, degree, or specific skills to find the best match for your knowledge.
 Profile Management: Create and manage profiles including contact info, job history, and employer verification details.
@@ -14,7 +14,7 @@ Privacy Controls: Toggle visibility of private information to keep personal data
 Notifications & Alerts: Receive alerts when suitable jobs appear or when employers apply your profile.
 Employer Insights: View employer profiles and reputation before applying.
 Safety Tools: Block employers with bad attitudes for a safer platform experience.
-# For Employers (Recruiters)
+### For Employers (Recruiters)
 Job Posting: Add detailed job descriptions, requirements, and set urgency flags to attract faster applicants.
 Applicant Management: Approve or disapprove employees for specific jobs; view applicant databases per job.
 Analytics Dashboard: Visualize income and reputation metrics to track app success.
